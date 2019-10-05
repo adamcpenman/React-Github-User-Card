@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Details = styled.details`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+`
 
 function FollowerList(props) {
     return (
-        <div>
+        <Details>
+            <summary>Friends</summary>
             {props.children}
-        </div>
+        </Details>
     )
 }
 
