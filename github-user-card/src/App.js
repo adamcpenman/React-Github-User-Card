@@ -41,7 +41,7 @@ constructor() {
         recentUser: "adamcpenman",
         submitting: false,
         user: {},
-        followers: ['']
+        followers: []
     }
 }
 
@@ -101,7 +101,7 @@ if (prevState.user !== this.state.user) {
 render() {
     return (
         <MainDiv> 
-            <StyledDiv>
+            {/* <StyledDiv>
             <h1>Search for a Github user</h1>
             <form onSubmit={event => this.handleSubmit(event)}>
                 <input 
@@ -109,13 +109,13 @@ render() {
                     value={this.state.recentUser}
                     onChange={event => this.handleChange(event)}
                     />
-                    {/* <select value={this.state.followers} onChange={this.handleChange}>
+                     <select value={this.state.followers} onChange={this.handleChange}>
                         {this.state.followers.map((items, index) => 
                         <option key={index} value={items}>{`${this.setState.followers}`}</option>)}
-                    </select> */}
+                    </select> 
                     <button>Search</button>
                      </form>
-                     </StyledDiv>
+                     </StyledDiv> */}
                     <UserCard user={this.state.user}>
                         <FollowerList>
                       {this.state.followers.map(follower => (
